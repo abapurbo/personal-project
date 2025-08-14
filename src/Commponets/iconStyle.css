@@ -1,0 +1,13 @@
+.img-container {
+border-top-left-radius:40%;
+border-bottom-right-radius:40%;
+/* border:2px solid red */
+border-top:3px solid #3AB0FF;
+border-bottom:3px solid #3AB0FF
+}
+
+.btn {
+    background: linear-gradient(80deg,  #3AB0FF);
+    color:white;
+    cursor:none 
+}
