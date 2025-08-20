@@ -28,25 +28,25 @@ const MainLayout = () => {
 
 
     return (
-        <div className='p-10 cursor-none'>
+        <div className='p-4  cursor-none bg-gradient-to-b from-indigo-100 via-purple-100 to-pink-100 '>
             {/* cursor */}
             <MagicCursor></MagicCursor>
 
-            <div className={`fixed  left-10 right-10 duration-1000 transition-all z-40 ${scrolled ? 'left-20 right-20' : 'top-10'}`}>
+            <div className={`fixed   left-10 right-10 duration-1000 transition-all z-40 ${scrolled ? 'left-20 right-20' : 'top-4'}`}>
                 <Navbar></Navbar>
             </div>
             {/* for the main content */}
-            <div className='z-10  mx-10 mt-20'>
-                <di id='home' className='scroll-mt-46'>
+            <div className='z-10  mx-10 mt-30 scroll-mt-46'>
+                <div id='home' className='scroll-mt-46'>
                     <Home></Home>
-                </di>
-                <div id='about'>
+                </div>
+                <div id='about' className='scroll-m-46'>
                     <About></About>
                 </div>
-                <div id='skill'>
+                <div id='skill' className='scroll-mt-46'>
                     <Skill></Skill>
                 </div>
-                <div id='service'>
+                <div id='service' className='scroll-mt-46'>
                     <Service></Service>
                 </div>
             </div>

@@ -2,11 +2,11 @@
 @plugin "daisyui";
 
 :root {
-    --background-color: #ffffff;
-    --text-color: #000000;
+    --cosmic-dark: #ea1919;
+    --cosmic-surface: #000000;
 }
 
 body {
-    background-color: var(--background-color);
-    color: var(--text-color);
+    background-color: var( --cosmic-dark);
+    color: var( --cosmic-surface);
 }

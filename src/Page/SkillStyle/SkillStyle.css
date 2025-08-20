@@ -1,0 +1,54 @@
+#skill-card {
+    width: 180px;
+    height: 180px;
+    position: relative;
+    place-items: center;
+    place-content: center;
+    overflow: hidden;
+    border-radius:14px;
+    background:white;
+}
+
+#skill-card:hover {
+    transform: perspective(40px) rotatex(2deg) translateY(-40px);
+}
+
+#card-img {
+    position: absolute;
+
+}
+
+#skill-card:hover .skill {
+    transform: translateY(-20px) translateX(-10px);
+}
+
+#skill-card::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    background-image: linear-gradient(  transparent 60%,blue);
+    height: 250px;
+    filter: blur(1rem);
+    animation: rotBGimg 6s linear infinite;
+    transition: all 0.2s linear;
+
+}
+
+@keyframes rotBGimg {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
+#skill-card::after {
+    content: '';
+    position:absolute;
+    background:white;
+    inset: 4px;
+    border-radius: 15px;
+}

@@ -19,7 +19,7 @@ const MagicCursor = () => {
         id: Date.now(),
       };
 
-      setTrail((prev) => [...prev.slice(-15), newDot]);
+      setTrail((prev) => [...prev.slice(-10), newDot]);
 
       setTimeout(() => {
         setTrail((prev) => prev.filter((dot) => dot.id !== newDot.id));
