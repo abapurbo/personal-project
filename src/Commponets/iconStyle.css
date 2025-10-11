@@ -1,8 +1,7 @@
 .img-container {
 border-top-left-radius:40%;
 border-bottom-right-radius:40%;
-/* border:2px solid red */
 border-top:3px solid #9333EA;
-border-bottom:3px solid #9333EA
+border-bottom:3px solid #9333EA;
 }
 

@@ -1,0 +1,11 @@
+.active {
+    color: #9333EA;
+    font-weight: 600;
+}
+/* navbar responsive  */
+@media  screen and (max-width:576px) {
+    .nav-links {
+        display: none;
+    }
+    
+}

@@ -1,12 +1,4 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
-:root {
-    --cosmic-dark: #ea1919;
-    --cosmic-surface: #000000;
-}
 
-body {
-    background-color: var( --cosmic-dark);
-    color: var( --cosmic-surface);
-}

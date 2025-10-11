@@ -8,15 +8,14 @@ import '../font/font.css'
 import { Typewriter } from "react-simple-typewriter";
 export default function Banner() {
     return (
-        <div className="relative mb-20 cursor-none flex flex-col md:flex-row justify-between items-center px-10  py-10 overflow-hidden">
 
+        <div className=" container px-10 mx-auto   mb-20  flex flex-col md:flex-row   lg:justify-between md:justify-evenly items-center  py-10">
 
-            {/* Left Content */}
             <motion.div
                 initial={{ opacity: 0, x: -50 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.7 }}
-                className="relative z-10 "
+                className="relative  z-10 "
             >
                 {/* <h1 className="text-3xl font-semibold text-gray-600">Welcome</h1> */}
                 <span className="text-5xl md:text-5xl bitter-font  font-extrabold text-transparent bg-gradient-to-r from-indigo-500 to-purple-600 bg-clip-text drop-shadow-lg">
@@ -41,9 +40,8 @@ export default function Banner() {
                 <p className="mt-5 inter-regular max-w-lg text-black leading-relaxed">
                     Passionate Front-end Developer crafting clean, responsive UIs with a focus on smooth user experience and engaging animations. I turn complex ideas into simple, elegant designs.
                 </p>
-
                 {/* Social Links */}
-                <div className="flex items-center space-x-5 mt-6 text-[30px]">
+                <div className="flex items-center space-x-5 lg:mt-6 mt-2 text-[30px]">
                     <IoLogoGithub className=" p-2 rounded-full hover:bg-gray-300 hover:scale-110 transition-all duration-300" />
                     <FaLinkedinIn className=" p-2 rounded-full hover:bg-[#0077b5] hover:text-white hover:scale-110 transition-all duration-300" />
                     <FaTwitter className=" p-2 rounded-full text-[#1DA1F2] hover:bg-[#1DA1F2] hover:text-white hover:scale-110 transition-all duration-300" />
@@ -53,9 +51,9 @@ export default function Banner() {
                 {/* Button */}
                 <motion.button
                     whileHover={{ scale: 1.05 }}
-                    className="mt-6 flex items-center cursor-none gap-2 text-[18px] bg-purple-600 text-white font-semibold  hover:bg-purple-700  px-4 py-2  rounded-lg shadow-lg transition-all duration-300"
+                    className="lg:mt-6 mt-3 flex items-center cursor-none gap-2 lg:text-[18px] md:text-[18px]  text-[12px] bg-purple-600 text-white font-semibold  hover:bg-purple-700  lg:px-4 lg:py-2 px-2 py-2 rounded-lg shadow-lg transition-all duration-300"
                 >
-                    Download CV <IoCloudDownloadOutline className="text-2xl" />
+                    Download Resume <IoCloudDownloadOutline className="lg:text-2xl text-xl" />
                 </motion.button>
             </motion.div>
 
@@ -64,24 +62,20 @@ export default function Banner() {
                 initial={{ opacity: 0, x: 50 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.7 }}
-                className="relative mt-10 md:mt-0 z-10 "
+                className="relative lg:mt-10 md:mt-14 mt-16   z-10 "
             >
-                <BsCode className="text-6xl text-purple-600 absolute -top-2 -left-8 animate-bounce" />
+                <BsCode className="lg:text-5xl  md:text-5xl text-4xl text-purple-600 absolute lg:-top-2 -top-2 -left-4 lg:-left-8 animate-bounce" />
                 <div className=" relative group">
                     <div className=" img-container w-65 h-82 overflow-hidden shadow-2xl 
-                  bg-[] backdrop-blur-xl border border-white/20 ">
-                        <img
-                            src="https://i.ibb.co/fwmkfv5/professional.jpg"
-                            alt="professional"
-                            className="w-full h-full object-cover hover:scale-105 transition-transform transform duration-700"
-                        />
+                  backdrop-blur-xl border border-white/20 ">
+                        {/* image */}
                     </div>
 
                     {/* Glow Effect */}
-                    <div className="img-container absolute -inset-4 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 blur-3xl opacity-25 group-hover:opacity-50 transition"></div>
+                    <div className="img-container  border-2 -inset-2 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 blur-3xl opacity-25 group-hover:opacity-50 transition"></div>
                 </div>
 
-                <BsCodeSlash className="text-5xl text-purple-600 absolute -bottom-10 -right-7 animate-bounce" />
+                <BsCodeSlash className="lg:text-5xl md:text-5xl text-4xl text-purple-600 absolute right-0 animate-bounce" />
             </motion.div>
         </div>
     );
