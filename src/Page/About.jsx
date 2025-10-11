@@ -1,6 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion";
-import "../Page/AboutStyle/AboutImg.css";
 import { IoCloudDownloadOutline } from "react-icons/io5";
 
 const About = () => {
