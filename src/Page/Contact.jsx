@@ -32,7 +32,6 @@ const Contact = () => {
 
         {/* Contact Form */}
         <div className="md:w-1/2 w-full">
-          {/* 👉 Section Title + Subtitle */}
           <div className="mb-8 text-center md:text-left">
             <h2 className="text-4xl font-extrabold bg-gradient-to-r from-[#4338CA] via-[#6D28D9] to-[#C026D3] bg-clip-text text-transparent drop-shadow-sm">
               Get in Touch
