@@ -21,7 +21,7 @@ const Skill = () => {
   ];
 
   return (
-    <section className="relative min-h-screen flex flex-col justify-center items-center overflow-hidden py-20 px-6">
+    <section className="relative  flex flex-col justify-center items-center overflow-hidden py-16  px-6">
       
       {/* Background blobs */}
       <div className="absolute top-0 left-0 w-[250px] h-[250px] bg-indigo-300/20 rounded-full blur-[100px] -z-10"></div>
@@ -33,7 +33,7 @@ const Skill = () => {
       </h2>
 
       {/* Skill Grid */}
-      <div className="grid lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-5 w-full max-w-5xl">
+      <div className="grid lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-5 w-full max-w-5xl ">
         {skills.map((skill, i) => (
           <motion.div
             key={i}

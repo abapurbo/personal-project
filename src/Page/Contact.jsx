@@ -12,7 +12,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="relative min-h-screen  flex items-center justify-center py-24 px-6 overflow-hidden">
+    <section className="relative min-h-screen  flex items-center justify-center py-12  px-6 overflow-hidden">
       {/* Soft Gradient Background Blobs */}
       <div className="absolute top-0 left-0 w-[400px] h-[400px] bg-purple-300/30 rounded-full blur-[120px] -z-10"></div>
       <div className="absolute bottom-0 right-0 w-[450px] h-[450px] bg-pink-300/30 rounded-full blur-[120px] -z-10"></div>
