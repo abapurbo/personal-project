@@ -5,7 +5,7 @@ import { MdOutlineLightMode, MdOutlineNightlight } from "react-icons/md";
 import '../font/font.css'
 import '../Shared/shared.css'
 const Navbar = () => {
-  const [activeSection, setActiveSection] = useState("home");
+    const [activeSection, setActiveSection] = useState("home");
     const handleSmoothScroll = (targetId) => {
         const targetElement = document.getElementById(targetId);
         if (targetElement) {
@@ -15,15 +15,28 @@ const Navbar = () => {
     }
 
     // active link styling
-  const linkClass = (id) =>
-    `transition-colors duration-300 hover:text-purple-600 ${
-      activeSection === id ? "text-purple-600 font-semibold" : "text-black"
-    }`;
+    const linkClass = (id) =>
+        `transition-colors duration-300 hover:text-purple-600 ${activeSection === id ? "text-purple-600 font-semibold" : "text-black"
+        }`;
 
     return (
-        <div  className='px-5  container  py-3 rounded-xl mx-auto  backdrop-blur-xl   bg-white/30 dark:bg-black/10  shadow-xl '>
+        <div className='px-5  container  py-3 rounded-xl mx-auto  backdrop-blur-xl   bg-white/30 dark:bg-black/10  shadow-xl '>
             <nav className=' flex justify-between flex-row items-center'>
-                <h1 className='text-2xl   font-extrabold'>&lt;<span className='text-4xl font-extrabold text-purple-600'>A</span>purbo/&gt;</h1>
+                <div className='flex items-center'>
+                    <img
+                        className='w-12'
+                        src="https://i.ibb.co.com/Gf4wfFV0/Screenshot-2025-10-11-114307-removebg-preview.png"
+                        alt="Logo"
+                    />
+                    <h1
+                        className="text-2xl font-semibold ml-2
+               bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 
+               bg-clip-text text-transparent"
+                    >
+                        Apurbo
+                    </h1>
+                </div>
+
                 <div className='nav-links bitter-font  font-semibold inter-regular  space-x-10'>
                     <span className={linkClass('home')} onClick={() => handleSmoothScroll('home')}>Home</span>
                     <span className={linkClass('about')} onClick={() => handleSmoothScroll('about')}>About Me</span>
@@ -33,7 +46,7 @@ const Navbar = () => {
                     <span className={linkClass('contact')} onClick={() => handleSmoothScroll('contact')}>Contact Me</span>
                 </div>
                 <div className='flex items-center space-x-5'>
-                  
+
 
 
                     <button className='px-4 py-2 rounded-xl bg-purple-600 text-white font-semibold 

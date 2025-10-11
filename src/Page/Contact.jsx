@@ -43,7 +43,7 @@ const Contact = () => {
           </div>
 
 
-          <form onSubmit={handleSubmitForm} className="grid grid-cols-2 gap-5">
+          <form onSubmit={handleSubmitForm} className="grid grid-cols-2 gap-2">
             <input
               type="text"
               placeholder="Full Name"
