@@ -7,9 +7,7 @@ const Contact = () => {
     }
     return (
         <div className='py-30 grid grid-cols-2 gap-6  container px-10  mx-auto '>
-            <div className='border-3'>
-
-            </div>
+           
        <form
   onSubmit={handleSubmitForm}
   className="bg-gradient-to-br from-purple-50/70 via-pink-50/60 to-indigo-50/60
