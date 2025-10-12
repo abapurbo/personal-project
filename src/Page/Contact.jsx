@@ -18,20 +18,20 @@ const Contact = () => {
       <div className="absolute bottom-0 right-0 w-[450px] h-[450px] bg-pink-300/30 rounded-full blur-[120px] -z-10"></div>
 
       {/* Glass Container */}
-      <div className="w-[100%] flex flex-col  md:flex-row items-center justify-between gap-12 bg-white/60 backdrop-blur-3xl border border-white/30 shadow-[0_8px_50px_rgba(147,51,234,0.15)] rounded-3xl p-6  md:p-8 transition-all duration-500 hover:shadow-[0_8px_60px_rgba(236,72,153,0.25)] hover:scale-[1.01]">
+      <div className="w-[100%] flex flex-col  md:flex-row items-center justify-between md:gap-12 gap-8 bg-white/60 backdrop-blur-3xl border border-white/30 shadow-[0_8px_50px_rgba(147,51,234,0.15)] rounded-3xl p-6  md:p-8 transition-all duration-500 hover:shadow-[0_8px_60px_rgba(236,72,153,0.25)] hover:scale-[1.01]">
 
         {/* Lottie Animation + Info */}
-        <div className="w[100%] flex flex-col justify-center items-center gap-6">
-          <Lottie animationData={sendEmailUs} className="w-[400px] max-w-[600px]  " />
-          <div className="flex flex-row justify-between items-center gap-3 text-gray-700 text-sm md:text-base">
-            <p className="flex items-center gap-2"><IoLocationSharp className="text-purple-600" /> Dhaka, Bangladesh</p>
-            <p className="flex items-center gap-2"><FaWhatsapp className="text-green-600" /> +8801949823468</p>
-            <p className="flex items-center gap-2"><MdEmail className="text-pink-500" /> absarker238@gmail.com</p>
+        <div className=" flex  flex-col justify-center items-center md:gap-6">
+          <Lottie animationData={sendEmailUs} className=" w-[250px] md:w-[400px] max-w-[600px]  " />
+          <div className="flex text-xl md:flex-row flex-col justify-between items-center gap-3 text-gray-700 text-sm md:text-base">
+            <p className="flex text-xl items-center gap-1"><IoLocationSharp className="text-purple-600" /> Dhaka,Bangladesh</p>
+            <p className="flex text-xl items-center gap-1"><FaWhatsapp className="text-green-600" /> +8801949823468</p>
+            <p className="flex text-xl items-center gap-1"><MdEmail className="text-pink-500 mt-1" /> absarker238@gmail.com</p>
           </div>
         </div>
 
         {/* Contact Form */}
-        <div className="md:w-1/2 w-full">
+        <div className="md:w-1/2  w-full">
           <div className="mb-8 text-center md:text-left">
             <h2 className="text-4xl font-extrabold bg-gradient-to-r from-[#4338CA] via-[#6D28D9] to-[#C026D3] bg-clip-text text-transparent drop-shadow-sm">
               Get in Touch

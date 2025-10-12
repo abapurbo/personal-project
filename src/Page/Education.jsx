@@ -9,14 +9,14 @@
                 institution: "Sherpur Polytechnic Institute",
                 year: "2022 - Present",
                 description:
-                    "Currently pursuing a Diploma in Engineering, focusing on practical and technical skills to build modern solutions in the field of technology.",
+                    "Currently studying in the Computer Science & Technology (CST) department, where I’m self-learning front-end development and building skills in modern web technologies.",
             },
             {
                 title: "Secondary School Certificate (SSC)",
                 institution: "Bhringaraj Talibabad High School, Gazipur, Kaliakair",
                 year: "2020 - 2021",
                 description:
-                    "Successfully completed SSC with strong performance in Science. Developed an early passion for technology and software development.",
+                    "Completed SSC in the Science stream, developing an early interest in technology and web development.",
             },
         ];
 

@@ -3,13 +3,14 @@ import { motion } from "framer-motion";
 import { Briefcase } from "lucide-react";
 
 export default function Experience() {
-  const experience = {
-    role: "Front-End Developer (MERN)",
-    company: "BD Calling IT Ltd.",
-    period: "September 2025 – Present",
-    description:
-      "Currently completing my Industrial Attachment at BD Calling IT Ltd. as a Front-End Developer. I'm working with modern web technologies including React.js, Node.js, Express, and MongoDB. During this attachment, I'm gaining real-world experience in building scalable web applications, collaborating in agile teams, and writing clean, maintainable code.",
-  };
+ const experience = {
+  role: "Front-End Developer (MERN)",
+  company: "BD Calling IT Ltd.",
+  period: "September 2025 – November 2025",
+  description:
+    "Completed a 3-month Industrial Attachment at BD Calling IT Ltd. as a Front-End Developer, where I learned React.js, Node.js, Express.js, and MongoDB, and enhanced my communication and team collaboration skills.",
+};
+
 
   return (
     <div

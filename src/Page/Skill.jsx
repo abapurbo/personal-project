@@ -21,14 +21,14 @@ const Skill = () => {
   ];
 
   return (
-    <section className="relative  flex flex-col justify-center container mx-auto items-center overflow-hidden py-16  px-10">
+    <section className="relative  flex flex-col justify-center container mx-auto items-center overflow-hidden md:py-16 py-10 px-10">
       
       {/* Background blobs */}
       <div className="absolute top-0 left-0 w-[250px] h-[250px] bg-indigo-300/20 rounded-full blur-[100px] -z-10"></div>
       <div className="absolute bottom-0 right-0 w-[300px] h-[300px] bg-pink-300/20 rounded-full blur-[100px] -z-10"></div>
 
       {/* Title */}
-      <h2 className="text-4xl font-extrabold mb-12 text-center text-gray-800">
+      <h2 className="md:text-4xl text-3xl font-extrabold md:mb-12 mb-8 text-center text-gray-800">
         My <span className="text-purple-600">Tech Stack</span>
       </h2>
 

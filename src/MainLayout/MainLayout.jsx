@@ -16,14 +16,14 @@ const MainLayout = () => {
 
 
       {/* Fixed Navbar */}
-      <header className='fixed w-[100%] z-50 border-2'>
+      <header className='fixed w-[100%] z-50 '>
         <Navbar />
       </header>
 
       {/* Main Content */}
 
       <div className='z-20'>
-        <section id="home" className="scroll-mt-24 pt-34">
+        <section id="home" className="scroll-mt-24 md:pt-34 pt-14">
           <Home />
         </section>
         <section id="about" className="scroll-mt-24">

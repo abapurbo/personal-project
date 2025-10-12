@@ -23,7 +23,7 @@ const MagicCursor = () => {
 
       setTimeout(() => {
         setTrail((prev) => prev.filter((dot) => dot.id !== newDot.id));
-      }, 500);
+      }, 1000);
     };
 
     document.addEventListener("mousemove", moveCursor);
@@ -39,7 +39,7 @@ const MagicCursor = () => {
         style={{
           left: `${pos.x}px`,
           top: `${pos.y}px`,
-          transform: "translate(-50%, -50%)", // center align
+          transform: "translate(-50%, -50%)", 
         }}
       ></div>
 
@@ -51,7 +51,7 @@ const MagicCursor = () => {
           style={{
             left: `${dot.x}px`,
             top: `${dot.y}px`,
-            transform: "translate(-50%, -50%)", // center align
+            transform: "translate(-50%, -50%)", 
           }}
         ></div>
       ))}
