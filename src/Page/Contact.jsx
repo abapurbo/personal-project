@@ -12,17 +12,17 @@ const Contact = () => {
   };
 
   return (
-    <section className="relative min-h-screen  flex items-center justify-center py-12  px-6 overflow-hidden">
+    <section className="relative container mx-auto px-10 flex items-center justify-center py-12   overflow-hidden">
       {/* Soft Gradient Background Blobs */}
       <div className="absolute top-0 left-0 w-[400px] h-[400px] bg-purple-300/30 rounded-full blur-[120px] -z-10"></div>
       <div className="absolute bottom-0 right-0 w-[450px] h-[450px] bg-pink-300/30 rounded-full blur-[120px] -z-10"></div>
 
       {/* Glass Container */}
-      <div className="max-w-6xl w-full flex flex-col md:flex-row items-center justify-between gap-12 bg-white/60 backdrop-blur-3xl border border-white/30 shadow-[0_8px_50px_rgba(147,51,234,0.15)] rounded-3xl p-6  md:p-8 transition-all duration-500 hover:shadow-[0_8px_60px_rgba(236,72,153,0.25)] hover:scale-[1.01]">
+      <div className="w-[100%] flex flex-col  md:flex-row items-center justify-between gap-12 bg-white/60 backdrop-blur-3xl border border-white/30 shadow-[0_8px_50px_rgba(147,51,234,0.15)] rounded-3xl p-6  md:p-8 transition-all duration-500 hover:shadow-[0_8px_60px_rgba(236,72,153,0.25)] hover:scale-[1.01]">
 
         {/* Lottie Animation + Info */}
-        <div className="md:w-1/2 w-full flex flex-col justify-center gap-6">
-          <Lottie animationData={sendEmailUs} className="w-[400px] md:w-[440px]" />
+        <div className="w[100%] flex flex-col justify-center items-center gap-6">
+          <Lottie animationData={sendEmailUs} className="w-[400px] max-w-[600px]  " />
           <div className="flex flex-row justify-between items-center gap-3 text-gray-700 text-sm md:text-base">
             <p className="flex items-center gap-2"><IoLocationSharp className="text-purple-600" /> Dhaka, Bangladesh</p>
             <p className="flex items-center gap-2"><FaWhatsapp className="text-green-600" /> +8801949823468</p>

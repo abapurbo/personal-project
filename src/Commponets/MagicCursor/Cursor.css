@@ -1,8 +1,8 @@
 .main-cursor {
     position: fixed;
-    width: 8px;
-    height: 8px;
-    background: rgb(39, 31, 31);
+    width: 10px;
+    height: 10px;
+    background: #0d01f1;
     border-radius: 50%;
     pointer-events: none;
     transform: translate(-50%, -50%);
@@ -10,10 +10,10 @@
 }
 
 .dot {
-    width: 8px;
-    height: 8px;
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
-    background-color: rgb(39, 31, 31);
+    background-color: #0d01f1;
     position: fixed;
     pointer-events: none;
     transform: translate(-50%, -50%);
