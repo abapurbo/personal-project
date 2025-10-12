@@ -9,13 +9,13 @@ import { Typewriter } from "react-simple-typewriter";
 export default function Banner() {
     return (
 
-        <div className=" container md:px-10 px-6 mx-auto gap-20  mb-20  flex flex-col md:flex-row   lg:justify-between md:justify-evenly items-center  py-10">
+        <div className=" container md:px-10 px-6 mx-auto gap-20 mb-6 md:mb-20  flex flex-col md:flex-row   lg:justify-between md:justify-evenly items-center  py-10">
 
             <motion.div
                 initial={{ opacity: 0, x: -50 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.7 }}
-                className="relative  z-10 md:order-1 order-2  flex flex-col justify-center items-center "
+                className="relative  z-10 md:order-1 order-2  flex flex-col md:flex-start md:justify-start justify-center md:items-start items-center "
             >
                 {/* <h1 className="text-3xl font-semibold text-gray-600">Welcome</h1> */}
                 <span className="text-4xl md:text-5xl bitter-font  font-extrabold text-transparent bg-gradient-to-r from-indigo-500 to-purple-600 bg-clip-text drop-shadow-lg">

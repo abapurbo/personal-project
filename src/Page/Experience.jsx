@@ -15,7 +15,7 @@ export default function Experience() {
   return (
     <div
       id="experience"
-      className="relative container mx-auto px-6 py-20 flex flex-col items-center"
+      className="relative container mx-auto px-6 md:py-20 flex flex-col items-center"
     >
       {/* Section Title */}
       <motion.h1
@@ -33,7 +33,7 @@ export default function Experience() {
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7 }}
-        className="relative bg-white/60 backdrop-blur-xl border border-purple-200/40 shadow-xl rounded-2xl p-8 w-full max-w-3xl 
+        className="relative bg-white/60 backdrop-blur-xl border border-purple-200/40 shadow-xl rounded-2xl md:p-8 p-6 w-full max-w-3xl 
                    hover:shadow-purple-200/60 hover:-translate-y-1 transition-all duration-300"
       >
         {/* Icon */}
@@ -43,7 +43,7 @@ export default function Experience() {
 
         {/* Content */}
         <div className="mt-4">
-          <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-1">
+          <h2 className="text-xl  md:text-3xl font-semibold text-gray-900 mb-1">
             {experience.role}
           </h2>
           <p className="text-lg text-purple-600 font-medium mb-2">

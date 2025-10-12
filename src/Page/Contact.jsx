@@ -12,7 +12,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="relative container mx-auto px-10 flex items-center justify-center py-12   overflow-hidden">
+    <section className="relative container mx-auto  md:px-10 px-6 flex items-center justify-center py-18   overflow-hidden">
       {/* Soft Gradient Background Blobs */}
       <div className="absolute top-0 left-0 w-[400px] h-[400px] bg-purple-300/30 rounded-full blur-[120px] -z-10"></div>
       <div className="absolute bottom-0 right-0 w-[450px] h-[450px] bg-pink-300/30 rounded-full blur-[120px] -z-10"></div>
@@ -22,8 +22,8 @@ const Contact = () => {
 
         {/* Lottie Animation + Info */}
         <div className=" flex  flex-col justify-center items-center md:gap-6">
-          <Lottie animationData={sendEmailUs} className=" w-[250px] md:w-[400px] max-w-[600px]  " />
-          <div className="flex text-xl md:flex-row flex-col justify-between items-center gap-3 text-gray-700 text-sm md:text-base">
+          <Lottie animationData={sendEmailUs} className=" w-[280px] md:w-[400px] max-w-[600px]  " />
+          <div className="flex  md:flex-row flex-col justify-between items-center gap-3 text-gray-700 text-sm md:text-base">
             <p className="flex text-xl items-center gap-1"><IoLocationSharp className="text-purple-600" /> Dhaka,Bangladesh</p>
             <p className="flex text-xl items-center gap-1"><FaWhatsapp className="text-green-600" /> +8801949823468</p>
             <p className="flex text-xl items-center gap-1"><MdEmail className="text-pink-500 mt-1" /> absarker238@gmail.com</p>

@@ -7,15 +7,19 @@ const About = () => {
     return (
         <section
             id="about"
-            className="md:py-16 p-8 container px-10 mx-auto  lg:mb-20 md:mb-14 mb-0 flex lg:flex-row  flex-col justify-between items-center gap-12 relative"
+            className="md:py-16 p-8  container px-10 mx-auto  lg:mb-20 md:mb-14 mb-0 flex lg:flex-row  flex-col justify-between items-center gap-12 relative"
         >
 
             {/* Image Section */}
             <motion.div
                 className="relative  md:flex md:justify-center items-center "
-                initial={{ opacity: 0, x: -30 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.7 }}
+                initial={{
+                    opacity: 0,
+                    x: isSmallScreen ? 0 : 30,  // Right on large, 0 on small
+                    y: isSmallScreen ? 30 : 0,  // Bottom on small, 0 on large
+                }}
+                whileInView={{ opacity: 1, x: 0, y: 0 }}
+                transition={{ duration: 0.7, delay: 0.2 }}
             >
                 <div className="relative group">
                     <div className="h-[400px] w-80 md:w-80 md:h-[400px] rounded-2xl  p-[6px] shadow-xl transition-transform duration-500 group-hover:scale-105">

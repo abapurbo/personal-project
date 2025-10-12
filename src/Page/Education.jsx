@@ -23,7 +23,7 @@
         return (
             <section
                 id="education"
-                className="relative py-16 px-6 md:px-10 container   overflow-hidden"
+                className="relative md:py-16 py-6 px-6 md:px-10 container   overflow-hidden"
             >
                 {/* Background Blobs */}
                 <div className="absolute top-0 left-0 w-[300px] h-[300px] bg-purple-300/30 rounded-full blur-[120px] -z-10"></div>
@@ -31,7 +31,7 @@
 
                 {/* Title */}
                 {/* Title */}
-                <div className="container mx-auto max-w-3xl text-center mb-16">
+                <div className="container mx-auto max-w-3xl text-center md:mb-16 mb-8">
                     <motion.h2
                         initial={{ opacity: 0, y: -30 }}
                         whileInView={{ opacity: 1, y: 0 }}
