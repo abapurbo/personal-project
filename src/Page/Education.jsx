@@ -23,7 +23,7 @@
         return (
             <section
                 id="education"
-                className="relative md:py-16 py-6 px-6 md:px-10 container   overflow-hidden"
+                className="relative md:py-16 py-6 px-6 lg:px-10 md:px-6 container  mx-auto  overflow-hidden"
             >
                 {/* Background Blobs */}
                 <div className="absolute top-0 left-0 w-[300px] h-[300px] bg-purple-300/30 rounded-full blur-[120px] -z-10"></div>

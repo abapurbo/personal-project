@@ -21,7 +21,7 @@ const Skill = () => {
   ];
 
   return (
-    <section className="relative  flex flex-col justify-center container mx-auto items-center overflow-hidden lg:py-16 md:py-8 py-10 px-10">
+    <section className="relative  flex flex-col justify-center container mx-auto items-center overflow-hidden lg:py-16 md:py-8 lg:px-10 md:px-6  py-10 px-10">
       
       {/* Background blobs */}
       <div className="absolute top-0 left-0 w-[250px] h-[250px] bg-indigo-300/20 rounded-full blur-[100px] -z-10"></div>

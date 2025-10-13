@@ -15,7 +15,7 @@ export default function Experience() {
   return (
     <div
       id="experience"
-      className="relative container mx-auto px-6 md:py-20 flex flex-col items-center"
+      className="relative container mx-auto lg:px-10 md:px-6 px-6 md:py-20 flex flex-col items-center"
     >
       {/* Section Title */}
       <motion.h1

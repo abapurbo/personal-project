@@ -7,7 +7,7 @@ const About = () => {
     return (
         <section
             id="about"
-            className="lg:py-16 md:py-6 p-8  container px-10 mx-auto  lg:mb-20  mb-0 flex lg:flex-row  flex-col justify-between items-center gap-12 relative"
+            className="lg:py-16 md:py-6 md:px-6 lg:px-10 p-8  container px-10 mx-auto  lg:mb-20  mb-0 flex lg:flex-row  flex-col justify-between items-center gap-12 relative"
         >
 
             {/* Image Section */}

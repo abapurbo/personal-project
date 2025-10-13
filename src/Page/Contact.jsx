@@ -5,6 +5,7 @@ import sendEmailUs from "../../src/assets/Lottie/Email.json";
 import { IoLocationSharp } from "react-icons/io5";
 import { FaWhatsapp } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import './Responsive.css'
 
 const Contact = () => {
   const handleSubmitForm = (e) => {
@@ -12,26 +13,30 @@ const Contact = () => {
   };
 
   return (
-    <section className="relative container mx-auto  md:px-10 px-6 flex items-center justify-center py-18   overflow-hidden">
+    <section className="relative container mx-auto lg:px-10  md:px-6  px-6 flex items-center justify-center py-18   overflow-hidden">
       {/* Soft Gradient Background Blobs */}
       <div className="absolute top-0 left-0 w-[400px] h-[400px] bg-purple-300/30 rounded-full blur-[120px] -z-10"></div>
       <div className="absolute bottom-0 right-0 w-[450px] h-[450px] bg-pink-300/30 rounded-full blur-[120px] -z-10"></div>
 
       {/* Glass Container */}
-      <div className="w-[100%]  flex flex-col  lg:flex-row items-center justify-between md:gap-12 gap-8 bg-white/60 backdrop-blur-3xl border border-white/30 shadow-[0_8px_50px_rgba(147,51,234,0.15)] rounded-3xl p-6  md:p-8 transition-all duration-500 hover:shadow-[0_8px_60px_rgba(236,72,153,0.25)] hover:scale-[1.01]">
+      <div className=" flex flex-col  md:flex-row items-center justify-between lg:gap-12 md:gap-4 gap-6 bg-white/60 backdrop-blur-3xl border border-white/30 shadow-[0_8px_50px_rgba(147,51,234,0.15)] rounded-3xl p-2  md:p-8 transition-all duration-500 hover:shadow-[0_8px_60px_rgba(236,72,153,0.25)] hover:scale-[1.01]">
 
         {/* Lottie Animation + Info */}
-        <div className=" flex  flex-col justify-center items-center md:gap-6">
-          <Lottie animationData={sendEmailUs} className=" w-[280px] lg:w-[400px] md:w-[500px]  max-w-[600px]  " />
-          <div className="flex  md:flex-row flex-col justify-between items-center gap-3 text-gray-700 text-sm md:text-base">
-            <p className="flex text-xl items-center gap-1"><IoLocationSharp className="text-purple-600" /> Dhaka,Bangladesh</p>
-            <p className="flex text-xl items-center gap-1"><FaWhatsapp className="text-green-600" /> +8801949823468</p>
-            <p className="flex text-xl items-center gap-1"><MdEmail className="text-pink-500 mt-1" /> absarker238@gmail.com</p>
+        <div id="lottie-container" className=" flex  flex-col justify-center items-center lg:gap-6">
+          <Lottie animationData={sendEmailUs} className=" w-[300px] lg:w-[500px] lg:h-[500px]  md:w-[350px] md:h-[300px]    " />
+          <div
+            id="social-contact"
+            className="flex flex-col md:flex-col lg:flex-row lg:-mt-10 md:-mt- w-full justify-between  items-center text-gray-700 text-sm "
+          >
+            <p className="flex items-center gap-1"><IoLocationSharp className="text-purple-600" /> Dhaka, Bangladesh</p>
+            <p className="flex items-center gap-1"><FaWhatsapp className="text-green-600" /> +8801949823468</p>
+            <p className="flex items-center gap-1"><MdEmail className="text-pink-500 mt-1" /> absarker238@gmail.com</p>
           </div>
+
         </div>
 
         {/* Contact Form */}
-        <div className=" w-full">
+        <div className=" w-[100%] p-4 ">
           <div className="mb-8 text-center lg:text-left">
             <h2 className="text-4xl font-extrabold bg-gradient-to-r from-[#4338CA] via-[#6D28D9] to-[#C026D3] bg-clip-text text-transparent drop-shadow-sm">
               Get in Touch
