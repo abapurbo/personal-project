@@ -8,6 +8,7 @@ import MagicCursor from '../Commponets/MagicCursor/MagicCursor';
 import Contact from '../Page/Contact';
 import Education from '../Page/Education';
 import Experience from '../Page/Experience';
+import Footer from '../Shared/Footer';
 
 const MainLayout = () => {
   return (
@@ -41,7 +42,11 @@ const MainLayout = () => {
         <section id='contact' className="scroll-mt-24 ">
           <Contact></Contact>
         </section>
+        <section>
+          <Footer></Footer>
+        </section>
       </div>
+
 
       <MagicCursor />
     </div>
