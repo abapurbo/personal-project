@@ -9,7 +9,7 @@ import { Typewriter } from "react-simple-typewriter";
 export default function Banner() {
     return (
 
-        <div className=" container md:px-10 px-6 mx-auto gap-20 mb-6 md:mb-20  flex flex-col md:flex-row   lg:justify-between md:justify-evenly items-center  py-10">
+        <div className=" container md:px-10 px-6 mx-auto gap-20 mb-6 lg:mb-20 md:mb-10  flex flex-col md:flex-row   lg:justify-between md:justify-evenly items-center  py-10">
 
             <motion.div
                 initial={{ opacity: 0, x: -50 }}

@@ -82,10 +82,10 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Links */}
-        <div className="hidden md:flex space-x-6 font-semibold">{navLinks}</div>
+        <div className="hidden lg:flex space-x-6 font-semibold">{navLinks}</div>
 
         {/* Desktop Resume Button */}
-        <div className="hidden md:flex">
+        <div className="hidden lg:flex">
           <button
             className="px-4 py-2 rounded-xl bg-purple-600 text-white font-semibold shadow-md hover:bg-purple-700 transition-all duration-300"
           >
@@ -94,7 +94,7 @@ const Navbar = () => {
         </div>
 
         {/* Mobile Hamburger */}
-        <div className="md:hidden flex items-center">
+        <div className="lg:hidden flex items-center">
           <IconButton onClick={toggleDrawer(true)}>
             <Menu className="text-purple-600" />
           </IconButton>
