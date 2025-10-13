@@ -4,7 +4,7 @@ import { IoLocationSharp } from "react-icons/io5";
 
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-r from-purple-50 via-pink-50 to-indigo-50 text-gray-700 py-12 px-6 lg:px-20">
+    <footer className="bg-gradient-to-r from-purple-50 via-pink-50 to-indigo-50 text-gray-700 py-12 px-6 lg:px-16">
       {/* Footer Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 border-b border-purple-200 pb-10">
         
@@ -21,7 +21,7 @@ const Footer = () => {
             </h1>
           </div>
           <p className="text-sm leading-relaxed">
-            Hello, I'm Apurbo, a <span className="font-semibold">Front-End Developer</span> 
+            Hello, I'm Apurbo, a <span className="font-semibold">Front-End Developer </span> 
             focused on crafting elegant, responsive, and user-friendly websites. 
             Excited about executing your ideas with creativity and precision!
           </p>

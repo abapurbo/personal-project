@@ -13,11 +13,16 @@ const Contact = () => {
   };
 
   return (
-    <section className="relative container mx-auto lg:px-10  md:px-6  px-6 flex items-center justify-center py-18   overflow-hidden">
+    <section className="relative container mx-auto lg:px-10  md:px-6  px-6 flex flex-col items-center justify-center py-18   overflow-hidden">
       {/* Soft Gradient Background Blobs */}
       <div className="absolute top-0 left-0 w-[400px] h-[400px] bg-purple-300/30 rounded-full blur-[120px] -z-10"></div>
       <div className="absolute bottom-0 right-0 w-[450px] h-[450px] bg-pink-300/30 rounded-full blur-[120px] -z-10"></div>
+      <div className="mb-8">
+        <h2 className="text-4xl font-extrabold bg-gradient-to-r from-[#4338CA] via-[#6D28D9] to-[#C026D3] bg-clip-text text-transparent drop-shadow-sm">
+          Get in Touch
+        </h2>
 
+      </div>
       {/* Glass Container */}
       <div className=" flex flex-col  md:flex-row items-center justify-between lg:gap-12 md:gap-4 gap-6 bg-white/60 backdrop-blur-3xl border border-white/30 shadow-[0_8px_50px_rgba(147,51,234,0.15)] rounded-3xl p-2  md:p-8 transition-all duration-500 hover:shadow-[0_8px_60px_rgba(236,72,153,0.25)] hover:scale-[1.01]">
 
@@ -37,16 +42,6 @@ const Contact = () => {
 
         {/* Contact Form */}
         <div className=" w-[100%] p-4 ">
-          <div className="mb-8 text-center lg:text-left">
-            <h2 className="text-4xl font-extrabold bg-gradient-to-r from-[#4338CA] via-[#6D28D9] to-[#C026D3] bg-clip-text text-transparent drop-shadow-sm">
-              Get in Touch
-            </h2>
-            <p className="text-gray-600 mt-2 text-base md:text-lg leading-relaxed">
-              I’d love to hear from you! Whether it’s a project idea, collaboration, or just a friendly hello — drop me a message below.
-            </p>
-          </div>
-
-
           <form onSubmit={handleSubmitForm} className="grid grid-cols-2 gap-2">
             <input
               type="text"
