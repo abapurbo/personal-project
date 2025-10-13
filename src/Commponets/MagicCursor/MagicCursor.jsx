@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import "../MagicCursor/Cursor.css";
+import "../../index.css";
 
 const MagicCursor = () => {
   const cursorRef = useRef(null);
