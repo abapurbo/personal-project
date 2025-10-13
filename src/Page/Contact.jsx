@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import Lottie from "lottie-react";
 import { IoIosSend } from "react-icons/io";
 import sendEmailUs from "../../src/assets/Lottie/Email.json";
@@ -6,10 +6,25 @@ import { IoLocationSharp } from "react-icons/io5";
 import { FaWhatsapp } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import './Responsive.css'
-
+import emailjs from '@emailjs/browser';
 const Contact = () => {
-  const handleSubmitForm = (e) => {
+  const form =useRef();
+  //contact from 
+  const sendEmail = (e) => {
     e.preventDefault();
+
+    emailjs
+      .sendForm('service_ceniub8', 'template_w0bolbc', form.current, {
+        publicKey: 'CNGUt6qV5Y02iXkIf',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
   };
 
   return (
@@ -42,23 +57,27 @@ const Contact = () => {
 
         {/* Contact Form */}
         <div className=" w-[100%] p-4 ">
-          <form onSubmit={handleSubmitForm} className="grid grid-cols-2 gap-2">
+          <form ref={form} onSubmit={sendEmail} className="grid grid-cols-2 gap-2">
             <input
               type="text"
+              name="from_name"
               placeholder="Full Name"
               className="col-span-2 md:col-span-1 bg-white/70 border border-purple-100 rounded-xl px-5 py-3 text-gray-700 placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-purple-400 shadow-sm transition-all duration-200"
             />
             <input
               type="email"
+              name="from_email"
               placeholder="Email Address"
               className="col-span-2 md:col-span-1 bg-white/70 border border-purple-100 rounded-xl px-5 py-3 text-gray-700 placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-purple-400 shadow-sm transition-all duration-200"
             />
             <input
               type="text"
+              name="from_subject"
               placeholder="Subject"
               className="col-span-2 bg-white/70 border border-purple-100 rounded-xl px-5 py-3 text-gray-700 placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-purple-400 shadow-sm transition-all duration-200"
             />
             <textarea
+              name="from_message"
               placeholder="Your message..."
               rows="5"
               className="col-span-2 bg-white/70 border border-purple-100 rounded-xl px-5 py-3 text-gray-700 placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-purple-400 shadow-sm transition-all duration-200"

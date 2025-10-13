@@ -42,10 +42,11 @@ export default function Banner() {
                 </p>
                 {/* Social Links */}
                 <div className="flex items-center space-x-5 lg:mt-6 md:mt-2 mt-4 text-[30px]">
-                    <IoLogoGithub className=" p-2 rounded-full hover:bg-gray-300 hover:scale-110 transition-all duration-300" />
+                    <a href="https://github.com/settings/profile"> <IoLogoGithub className=" p-2 rounded-full hover:bg-gray-300 hover:scale-110 transition-all duration-300" /></a>
                     <FaLinkedinIn className=" p-2 rounded-full hover:bg-[#0077b5] hover:text-white hover:scale-110 transition-all duration-300" />
                     <FaTwitter className=" p-2 rounded-full text-[#1DA1F2] hover:bg-[#1DA1F2] hover:text-white hover:scale-110 transition-all duration-300" />
-                    <FaFacebookF className=" p-2 rounded-full text-[#1877F2] hover:bg-[#1877F2] hover:text-white hover:scale-110 transition-all duration-300" />
+                    <a href="https://www.facebook.com/profile.php?id=61577638051677"><FaFacebookF className=" p-2 rounded-full text-[#1877F2] hover:bg-[#1877F2] hover:text-white hover:scale-110 transition-all duration-300" />
+                    </a>
                 </div>
 
                 {/* Button */}
