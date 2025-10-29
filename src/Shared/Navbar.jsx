@@ -58,7 +58,7 @@ const Navbar = () => {
       <span className={linkClass("about")} onClick={() => handleSmoothScroll("about")}>About Me</span>
       <span className={linkClass("skill")} onClick={() => handleSmoothScroll("skill")}>Skills</span>
       <span className={linkClass("education")} onClick={() => handleSmoothScroll("education")}>Education</span>
-      <span className={linkClass("experience")} onClick={() => handleSmoothScroll("experience")}>Experience</span>
+      {/* <span className={linkClass("experience")} onClick={() => handleSmoothScroll("experience")}>Experience</span> */}
       <span className={linkClass("project")} onClick={() => handleSmoothScroll("project")}>Projects</span>
       <span className={linkClass("contact")} onClick={() => handleSmoothScroll("contact")}>Contact Me</span>
     </>

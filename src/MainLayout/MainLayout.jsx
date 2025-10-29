@@ -36,9 +36,9 @@ const MainLayout = () => {
         <section id='education' className="scroll-mt-24">
           <Education></Education>
         </section>
-        <section id='experience' className='scroll-mt-24'>
+        {/* <section id='experience' className='scroll-mt-24'>
           <Experience></Experience>
-        </section>
+        </section> */}
         <section id='contact' className="scroll-mt-24 ">
           <Contact></Contact>
         </section>
