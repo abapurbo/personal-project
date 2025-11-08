@@ -7,6 +7,7 @@ import './iconStyle.css'
 import '../font/font.css'
 import { Typewriter } from "react-simple-typewriter";
 export default function Banner() {
+
     return (
 
         <div className=" container md:px-6 lg:px-10 px-6 mx-auto gap-20 mb-6 lg:mb-20 md:mb-10  flex flex-col md:flex-row   lg:justify-between md:justify-evenly items-center  py-10">
@@ -50,12 +51,16 @@ export default function Banner() {
                 </div>
 
                 {/* Button */}
-                <motion.button
-                    whileHover={{ scale: 1.05 }}
-                    className="lg:mt-6 mt-4 flex items-center cursor-none gap-2 lg:text-[18px] md:text-[18px]  text-[12px] bg-purple-600 text-white font-semibold  hover:bg-purple-700  lg:px-4 lg:py-2 px-2 py-2 rounded-lg shadow-lg transition-all duration-300"
-                >
-                    Download Resume <IoCloudDownloadOutline className="lg:text-2xl text-xl" />
-                </motion.button>
+                <motion.div>
+                    <a href="/Resume.pdf" download>
+                        <motion.button
+                            whileHover={{ scale: 1.05 }}
+                            className="lg:mt-6 mt-4 flex items-center cursor-none gap-2 lg:text-[18px] md:text-[18px]  text-[12px] bg-purple-600 text-white font-semibold  hover:bg-purple-700  lg:px-4 lg:py-2 px-2 py-2 rounded-lg shadow-lg transition-all duration-300"
+                        >
+                            Download Resume <IoCloudDownloadOutline className="lg:text-2xl text-xl" />
+                        </motion.button>
+                    </a>
+                </motion.div>
             </motion.div>
 
             {/* Right Content (Image + Code Icons) */}

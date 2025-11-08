@@ -86,11 +86,11 @@ const Navbar = () => {
 
         {/* Desktop Resume Button */}
         <div className="hidden lg:flex">
-          <button
+          <a href='Resume.pdf'
             className="px-4 py-2 rounded-xl bg-purple-600 text-white font-semibold shadow-md hover:bg-purple-700 transition-all duration-300"
           >
             Resume
-          </button>
+          </a>
         </div>
 
         {/* Mobile Hamburger */}
@@ -105,30 +105,30 @@ const Navbar = () => {
           anchor="left"
           open={open}
           onClose={toggleDrawer(false)}
-        
+
         >
           <div className="flex flex-col h-full bg-gradient-to-r from-purple-50 via-pink-50 to-indigo-50 p-2  space-y-4 w-60">
             <div className="flex flex-row items-center
               mb-4">
-            <img
-              className="w-12"
-              src="https://i.ibb.co.com/Gf4wfFV0/Screenshot-2025-10-11-114307-removebg-preview.png"
-              alt="Logo"
-            />
-            <h1 className="text-2xl  font-semibold -ml-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
-              Apurbo
-            </h1>
-          </div>
-           <div className='flex flex-col px-6'>
-             <div className="flex flex-col space-y-4 justify-center items-center">
-              {navLinks}
+              <img
+                className="w-12"
+                src="https://i.ibb.co.com/Gf4wfFV0/Screenshot-2025-10-11-114307-removebg-preview.png"
+                alt="Logo"
+              />
+              <h1 className="text-2xl  font-semibold -ml-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+                Apurbo
+              </h1>
             </div>
-            <button
-              className="mt-4 px-4 py-2 rounded-xl bg-purple-600 text-white font-semibold shadow-md hover:bg-purple-700 transition-all duration-300"
-            >
-              Resume
-            </button>
-           </div>
+            <div className='flex flex-col px-6'>
+              <div className="flex flex-col space-y-4 justify-center items-center">
+                {navLinks}
+              </div>
+              <a href="Resume.pdf"  className="mt-4 px-4 py-2 rounded-xl bg-purple-600 text-white font-semibold shadow-md hover:bg-purple-700 transition-all duration-300">
+              
+                  Resume
+                
+              </a>
+            </div>
           </div>
         </Drawer>
 
