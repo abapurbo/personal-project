@@ -1,22 +1,19 @@
-import {
-
-    createBrowserRouter,
-
-} from "react-router-dom";
-import MainLayout from "../Mainlayout/Mainlayout";
-import Home from "../Page/Home";
+import { createBrowserRouter } from "react-router-dom";
+import MainLayout from "../MainLayout/MainLayout";
+import { Home } from "lucide-react";
 import About from "../Page/About";
+
 const router = createBrowserRouter([
     {
         path: "/",
-        element:<MainLayout/>,
+        element: <MainLayout />,
         children: [
             {
-               path:'/',
-               element:<Home></Home>
-            },{
-                path:'/about',
-                element:<About></About>
+                path: '/',
+                element: <Home />
+            }, {
+                path: '/about',
+                element: <About />
             }
         ]
     },

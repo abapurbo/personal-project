@@ -11,10 +11,10 @@ import Experience from '../Page/Experience';
 import Footer from '../Shared/Footer';
 
 const MainLayout = () => {
+
   return (
     <div className=" bg-gradient-to-b from-indigo-100 via-purple-100 to-pink-100 ">
       {/* Custom Cursor */}
-
 
       {/* Fixed Navbar */}
       <header className='fixed w-[100%] z-50 '>

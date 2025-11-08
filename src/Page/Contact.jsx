@@ -15,7 +15,7 @@ const Contact = () => {
 
     emailjs
       .sendForm('service_ceniub8', 'template_w0bolbc', form.current, {
-        publicKey: 'CNGUt6qV5Y02iXkIf',
+        publicKey:import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
       })
       .then(
         () => {
@@ -25,6 +25,7 @@ const Contact = () => {
           console.log('FAILED...', error.text);
         },
       );
+      e.target.reset();
   };
 
   return (
