@@ -33,9 +33,9 @@ const Contact = () => {
       {/* Soft Gradient Background Blobs */}
       <div className="absolute top-0 left-0 w-[400px] h-[400px] bg-purple-300/30 rounded-full blur-[120px] -z-10"></div>
       <div className="absolute bottom-0 right-0 w-[450px] h-[450px] bg-pink-300/30 rounded-full blur-[120px] -z-10"></div>
-      <div className="mb-8">
-        <h2 className="text-4xl font-extrabold bg-gradient-to-r from-[#4338CA] via-[#6D28D9] to-[#C026D3] bg-clip-text text-transparent drop-shadow-sm">
-          Get in Touch
+      <div className="mb-8">  
+        <h2 className="md:text-3xl text-2xl border-b-3 border-b-[#9333EA] font-extrabold bg-gradient-to-r from-[#4338CA] via-[#6D28D9] to-[#C026D3] bg-clip-text text-transparent drop-shadow-sm">
+          Get in <span className="text-black">Touch</span>
         </h2>
 
       </div>

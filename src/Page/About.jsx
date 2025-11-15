@@ -42,7 +42,7 @@ const About = () => {
             >
                 <div className="flex flex-col lg:items-start md:items-center items-center">
                     <h2 className="text-2xl border-b-3 border-b-[#9333EA] md:text-3xl font-extrabold lg:mb-6 md:mb-5 mb-4 text-transparent bg-gradient-to-r from-indigo-500 to-purple-600 bg-clip-text relative md:text-center">
-                        About Me
+                        About <span className="text-black">Me</span>
                     </h2>
 
                     <p className="text-lg md:text-xl text-center md:text-justify leading-relaxed text-gray-700">

@@ -31,12 +31,12 @@
 
                 {/* Title */}
                 {/* Title */}
-                <div className="container mx-auto max-w-3xl text-center md:mb-16 mb-8">
+                <div className="container mx-auto max-w-3xl flex flex-col justify-center  items-center md:mb-16 mb-8">
                     <motion.h2
                         initial={{ opacity: 0, y: -30 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6 }}
-                        className="text-4xl md:text-5xl font-bold text-purple-700" // ← Header color changed
+                        className="md:text-3xl border-b-3 border-b-[#9333EA] w-fit text-2xl font-bold text-purple-700" // ← Header color changed
                     >
                         Education
                     </motion.h2>
