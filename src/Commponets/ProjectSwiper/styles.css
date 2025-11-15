@@ -21,8 +21,8 @@ body {
 
 .swiper-slide {
   display: block;
-  width: 450px;
-  height: 550px;
+  width: 400px;
+  height: 580px;
   object-fit: cover;
   border-radius: 16px;
   background: white;
