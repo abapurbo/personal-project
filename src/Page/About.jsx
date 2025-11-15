@@ -41,7 +41,7 @@ const About = () => {
                 transition={{ duration: 0.7, delay: 0.2 }}
             >
                 <div className="flex flex-col lg:items-start md:items-center items-center">
-                    <h2 className="text-2xl border-b-3 border-b-[#9333EA] md:text-3xl font-extrabold lg:mb-6 md:mb-5 mb-4 text-transparent bg-gradient-to-r from-indigo-500 to-purple-600 bg-clip-text relative md:text-center">
+                    <h2 className="text-2xl border-b-3 border-b-[#9333EA] md:text-3xl font-bold lg:mb-6 md:mb-5 mb-4 text-[#9333EA] md:text-center">
                         About <span className="text-black">Me</span>
                     </h2>
 

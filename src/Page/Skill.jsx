@@ -18,6 +18,7 @@ const Skill = () => {
     { name: "Express.js", img: "https://i.ibb.co/HDhmgbqt/express-js.png" },
     // { name: "Next.js", img: "https://i.ibb.co.com/8g9k9WRM/1-b-J2z2-NRf-Tnc-HAv5-Uj-Uxw-A-removebg-preview.png" },
     { name: "MongoDB", img: 'https://i.ibb.co.com/Fb7LMB3S/images-2-removebg-preview.png' },
+    { name: "JWT", img: "https://i.ibb.co.com/kgFXx0wn/jwt-flower-removebg-preview.png" },
     { name: "Figma", img: "https://i.ibb.co/Pz1pVhv0/Figma-logo-svg.png" },
 
   ];

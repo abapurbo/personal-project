@@ -23,7 +23,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ["home", "about", "skill", "education", "experience", "project", "contact"];
+      const sections = ["home", "about", "skill", "education", "experience", "projects", "contact"];
       const scrollY = window.scrollY;
 
       for (let i = 0; i < sections.length; i++) {
@@ -59,7 +59,7 @@ const Navbar = () => {
       <span className={linkClass("skill")} onClick={() => handleSmoothScroll("skill")}>Skills</span>
       <span className={linkClass("education")} onClick={() => handleSmoothScroll("education")}>Education</span>
       {/* <span className={linkClass("experience")} onClick={() => handleSmoothScroll("experience")}>Experience</span> */}
-      <span className={linkClass("project")} onClick={() => handleSmoothScroll("project")}>Projects</span>
+      <span className={linkClass("projects")} onClick={() => handleSmoothScroll("projects")}>Projects</span>
       <span className={linkClass("contact")} onClick={() => handleSmoothScroll("contact")}>Contact Me</span>
     </>
   );

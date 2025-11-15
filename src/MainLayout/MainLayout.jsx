@@ -9,6 +9,7 @@ import Contact from '../Page/Contact';
 import Education from '../Page/Education';
 import Experience from '../Page/Experience';
 import Footer from '../Shared/Footer';
+import Projects from '../Page/Projects';
 
 const MainLayout = () => {
 
@@ -35,6 +36,9 @@ const MainLayout = () => {
         </section>
         <section id='education' className="scroll-mt-24">
           <Education></Education>
+        </section>
+        <section id='projects' className="scroll-mt-24">
+          <Projects></Projects>
         </section>
         {/* <section id='experience' className='scroll-mt-24'>
           <Experience></Experience>
