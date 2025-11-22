@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import './iconStyle.css'
 import '../font/font.css'
 import { Typewriter } from "react-simple-typewriter";
+import MyImg from '../assets/MyImg/MyImg.png'
 export default function Banner() {
 
     return (
@@ -71,15 +72,27 @@ export default function Banner() {
                 className="relative lg:mt-10 md:mt-14 mt-16  md:order-2 order-1 z-10 "
             >
                 <BsCode className="lg:text-5xl  md:text-5xl text-4xl text-purple-600 absolute lg:-top-2 -top-2 -left-4 lg:-left-8 animate-bounce" />
-                <div className=" relative group">
-                    <div className=" img-container w-65 h-82 overflow-hidden shadow-2xl 
-                  backdrop-blur-xl border border-white/20 ">
-                        {/* image */}
+                <div className="relative group">
+                    <div
+                        className="img-container flex items-end w-65 h-82 overflow-hidden 
+        rounded-2xl shadow-[0_10px_30px_rgba(0,0,0,0.25)]
+        hover:shadow-[0_20px_40px_rgba(0,0,0,0.35)]
+        transition-all duration-500 backdrop-blur-xl border border-white/20"
+                    >
+                        <img
+                            src={MyImg}
+                            alt="My_image"
+                            className="object-cover"
+                        />
                     </div>
 
-                    {/* Glow Effect */}
-                    <div className="img-container  border-2 -inset-2 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 blur-3xl opacity-25 group-hover:opacity-50 transition"></div>
+                    {/* Glow Border */}
+                    <div className="absolute inset-0 rounded-2xl bg-gradient-to-r 
+        from-indigo-500 via-purple-500 to-pink-500 
+        opacity-20 group-hover:opacity-40 blur-xl transition-all duration-500">
+                    </div>
                 </div>
+
 
                 <BsCodeSlash className="lg:text-5xl md:text-5xl text-4xl text-purple-600 absolute right-0 animate-bounce" />
             </motion.div>

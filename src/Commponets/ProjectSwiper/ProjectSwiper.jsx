@@ -13,8 +13,7 @@ import './styles.css';
 // import required modules
 import { EffectCoverflow, Pagination } from 'swiper/modules';
 
-export default function ProjectSwiper({handleProjectDetails,openModal}) {
-  
+export default function ProjectSwiper() { 
   return (
     <>
       <Swiper
@@ -31,10 +30,10 @@ export default function ProjectSwiper({handleProjectDetails,openModal}) {
         }}
         pagination={true}
         modules={[EffectCoverflow, Pagination]}
-        className="mySwiper"
+        className="mySwiper "
       >
         <SwiperSlide>
-          <div className=' '>
+          <div className='bg-white'>
             <div>
               <img src="https://i.ibb.co.com/LDZmhPPY/Screenshot-2025-11-16-002012.png" alt="car-rental-plartform-home-image" />
             </div>
@@ -72,21 +71,18 @@ export default function ProjectSwiper({handleProjectDetails,openModal}) {
                   </button>
 
                 </div>
-                <div className='flex justify-between items-center  mt-8'>
-                  <button className='text-black font-semibold flex items-center gap-1 bg-gray-300 px-2 py-1 rounded-sm '><FaExternalLinkAlt />View Project</button>
-                  <button className='text-black font-semibold flex items-center gap-1 cursor-pointer bg-gray-200 px-2 py-1 rounded-sm '><img className='w-4' src="https://i.ibb.co.com/5xwL5N66/images-8-removebg-preview.png" alt="github-img" />Git Client</button>
-                  <button className='text-black font-semibold flex items-center gap-1 cursor-pointer bg-gray-300 px-2 py-1 rounded-sm '><img className='w-4' src="https://i.ibb.co.com/5xwL5N66/images-8-removebg-preview.png" alt="github-img" />Git Server</button>
+                <div className='flex justify-between items-center  mt-4'>
+                  <a href='https://car-rental-platform.pages.dev/' className='text-black font-semibold flex items-center gap-1 cursor-pointer hover:underline'><FaExternalLinkAlt />View Project</a>
+                  <a href='https://github.com/abapurbo/car-rental-platform-client' className='text-black font-semibold flex items-center gap-1 cursor-pointer hover:underline '><img className='w-4' src="https://i.ibb.co.com/5xwL5N66/images-8-removebg-preview.png" alt="github-img" />Git Client</a>
+                  <a href='https://github.com/abapurbo/car-rental-server' className='text-black font-semibold flex items-center gap-1 cursor-pointer hover:underline '><img className='w-4' src="https://i.ibb.co.com/5xwL5N66/images-8-removebg-preview.png" alt="github-img" />Git Server</a>
                 </div>
-              <p onClick={()=>{handleProjectDetails('RentWheels');openModal()}} className='flex items-center  hover:hover:text-red-600 text-black font-semibold justify-center gap-1'>
-                  <IoListSharp className='text-xl hover:text-red-600' />
-                  See Details
-                </p>
+
               </div>
             </div>
           </div>
         </SwiperSlide>
         <SwiperSlide className='w-auto'>
-          <div className='h-[600px] '>
+          <div className='bg-white'>
             <div>
               <img src="https://i.ibb.co.com/KxrDb3n4/Screenshot-2025-11-16-005611.png" alt="skill-swap-plartform-home-image" />
             </div>
@@ -95,38 +91,33 @@ export default function ProjectSwiper({handleProjectDetails,openModal}) {
                 <p className='text-xl text-black font-bold'><span className='text-[#9333EA]'>Skill</span>Swap</p>
                 <button className='bg-gray-200 px-2 py-1 shadow-2xl rounded-xs text-sm font-semibold'>Front-End</button>
               </div>
-              <div className='mt-3 space-y-3'>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga corrupti consequatur optio ducimus facilis impedit possimus laboriosam iure, dicta modi.</p>
-                <div className='flex flex-wrap gap-2'>
-                  <button className='flex items-center gap-1 text-black bg-gray-200 px-2 py-1 shadow-2xl rounded-xs text-sm font-semibold'>
-                    <img className='w-5' src="https://i.ibb.co.com/qYgz5RVj/images-10-removebg-preview-1.png" alt="React-img" />
-                    React
-                  </button>
-                  <button className='flex items-center gap-1 text-black bg-gray-200 px-2 py-1 shadow-2xl rounded-xs text-sm font-semibold'>
-                    <img className='w-5' src="https://i.ibb.co.com/Csh60SY0/CIAZz2-CYc6-Kc-removebg-preview.png" alt="tailwind-img" />
-                    Tailwind CSS
-                  </button>
-                  <button className='flex items-center gap-1 text-black bg-gray-200 px-2 py-1 shadow-2xl rounded-xs text-sm font-semibold'>
-                    <img className='w-5' src="https://i.ibb.co/ZqRTS5Z/images-3-removebg-preview.png" alt="firebase-img" />
-                    Firebase
-                  </button>
+                <div className='mt-3  space-y-3'>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga corrupti consequatur optio ducimus facilis impedit possimus laboriosam iure, dicta modi.</p>
+                  <div className='flex flex-wrap gap-2'>
+                    <button className='flex items-center gap-1 text-black bg-gray-200 px-2 py-1 shadow-2xl rounded-xs text-sm font-semibold'>
+                      <img className='w-5' src="https://i.ibb.co.com/qYgz5RVj/images-10-removebg-preview-1.png" alt="React-img" />
+                      React
+                    </button>
+                    <button className='flex items-center gap-1 text-black bg-gray-200 px-2 py-1 shadow-2xl rounded-xs text-sm font-semibold'>
+                      <img className='w-5' src="https://i.ibb.co.com/Csh60SY0/CIAZz2-CYc6-Kc-removebg-preview.png" alt="tailwind-img" />
+                      Tailwind CSS
+                    </button>
+                    <button className='flex items-center gap-1 text-black bg-gray-200 px-2 py-1 shadow-2xl rounded-xs text-sm font-semibold'>
+                      <img className='w-5' src="https://i.ibb.co/ZqRTS5Z/images-3-removebg-preview.png" alt="firebase-img" />
+                      Firebase
+                    </button>
+                  </div>
                 </div>
-              </div>
-              <div className='flex justify-between items-center  mt-32'>
-                <button className='text-black font-semibold flex items-center gap-1 bg-gray-300 px-2 py-1 rounded-sm '><FaExternalLinkAlt />View Project</button>
-                <button className='text-black font-semibold flex items-center gap-1 cursor-pointer bg-gray-200 px-2 py-1 rounded-sm '><img className='w-4' src="https://i.ibb.co.com/5xwL5N66/images-8-removebg-preview.png" alt="github-img" />Git Client</button>
-                <button className='text-black font-semibold flex items-center gap-1 cursor-pointer bg-gray-300 px-2 py-1 rounded-sm '><img className='w-4' src="https://i.ibb.co.com/5xwL5N66/images-8-removebg-preview.png" alt="github-img" />Git Server</button>
-              </div>
-              <p onClick={()=>{handleProjectDetails('skillSwap'),openModal()}} className='flex items-center mt-3  hover:hover:text-red-600 text-black font-semibold justify-center gap-1'>
-                <IoListSharp className='text-xl hover:text-red-600' />
-                See Details
-              </p>
+                <div className='flex justify-between items-center mt-4 '>
+                  <a href='https://b12-a9-firesheild-abapurbo.web.app/' className='text-black font-semibold flex items-center gap-1 cursor-pointer hover:underline '><FaExternalLinkAlt />View Project</a>
+                  <a href='https://github.com/abapurbo/b12-a9-firesheild-abapurbo' className='text-black font-semibold flex items-center gap-1 cursor-pointer hover:underline '><img className='w-4' src="https://i.ibb.co.com/5xwL5N66/images-8-removebg-preview.png" alt="github-img" />Git Client</a>
+                </div>
             </div>
           </div>
         </SwiperSlide>
 
       </Swiper>
-   
+
     </>
   );
 }

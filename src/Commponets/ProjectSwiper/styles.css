@@ -13,24 +13,24 @@ body {
 .swiper-slide {
   background-position: center;
   background-size: cover;
-  width: 450px;
-  height: 480px;
+  width: 400px;
+  /* height: 480px; */
   border-radius: 16px;
   overflow: hidden;
 }
 
-.swiper-slide {
-  display: block;
-  width: 400px;
-  height: 580px;
-  object-fit: cover;
-  border-radius: 16px;
-  background: white;
-}
+
 
 .swiper-slide:hover {
   box-shadow: -10px 0 20px #b577ef,
     10px 0 20px #b577ef;
 }
 
-.swiper-pagination {}
+@media screen and (max-width:576px) {
+  .swiper-slide {
+  
+    width:320px
+  
+  }
+  
+}

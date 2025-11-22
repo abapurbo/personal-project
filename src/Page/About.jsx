@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { IoCloudDownloadOutline } from "react-icons/io5";
-
+import MyImg from '../assets/MyImg/MyImg.png'
 const About = () => {
     const isSmallScreen = window.innerWidth < 768;
     return (
@@ -22,8 +22,8 @@ const About = () => {
                 transition={{ duration: 0.7, delay: 0.2 }}
             >
                 <div className="relative group">
-                    <div className="h-[400px] w-80 md:w-80 md:h-[400px] rounded-2xl  p-[6px] shadow-xl transition-transform duration-500 group-hover:scale-105">
-
+                    <div className="h-[400px] w-80 md:w-[400] md:h-[400px]   flex items-end  p-[6px] shadow-xl transition-transform duration-500 group-hover:scale-105">
+                        <img src={MyImg} alt="myimg" />
                     </div>
                     {/* Glow Effect */}
                     <div className="absolute inset-2 rounded-3xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 blur-2xl opacity-25 group-hover:opacity-40 "></div>
