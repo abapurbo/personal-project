@@ -64,13 +64,14 @@ const About = () => {
                         digital solutions that inspire and delight users.
                     </p>
 
-                    <motion.span
-                        whileHover={{ scale: 1.05 }}
-                        whileTap={{ scale: 0.95 }}
-                        className="flex lg:text-[18px] md:text-[18px] text-[12px] items-center lg:px-6 md:px-5 px-4 lg:py-3 md:py-2 py-2 bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl hover:from-purple-600 hover:to-indigo-600 transition-all"
-                    >
-                        Download Resume <IoCloudDownloadOutline className="lg:text-2xl ml-2 text-xl" />
-                    </motion.span>
+                       <a href="/Resume.pdf" download>
+                        <motion.button
+                            whileHover={{ scale: 1.05 }}
+                            className="lg:mt-6 mt-4 flex items-center cursor-none gap-2 lg:text-[18px] md:text-[18px]  text-[12px] bg-purple-600 text-white font-semibold  hover:bg-purple-700  lg:px-4 lg:py-2 px-2 py-2 rounded-lg shadow-lg transition-all duration-300"
+                        >
+                            Download Resume <IoCloudDownloadOutline className="lg:text-2xl text-xl" />
+                        </motion.button>
+                    </a>
                 </div>
             </motion.div>
         </section>
