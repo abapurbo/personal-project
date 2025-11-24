@@ -13,7 +13,7 @@ import './styles.css';
 // import required modules
 import { EffectCoverflow, Pagination } from 'swiper/modules';
 
-export default function ProjectSwiper() { 
+export default function ProjectSwiper() {
   return (
     <>
       <Swiper
@@ -43,7 +43,9 @@ export default function ProjectSwiper() {
                 <p className='bg-gray-200 px-2 py-1 shadow-2xl rounded-xs text-sm font-semibold'>Full-stack</p>
               </div>
               <div className='mt-3 space-y-3'>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto atque reprehenderit harum autem animi quisquam, dicta consequuntur facilis dignissimos praesentium.</p>
+                <p>
+                  A full-stack MERN car rental platform connecting users with local car owners to browse, book, and manage rentals easily with real-time availability and secure authentication.
+                </p>
                 <div className='flex flex-wrap gap-2'>
                   <button className='flex items-center gap-1 text-black bg-gray-200 px-2 py-1 shadow-2xl rounded-xs text-sm font-semibold'>
                     <img className='w-5' src="https://i.ibb.co.com/qYgz5RVj/images-10-removebg-preview-1.png" alt="React-img" />
@@ -71,7 +73,7 @@ export default function ProjectSwiper() {
                   </button>
 
                 </div>
-                <div className='flex justify-between items-center  mt-4'>
+                <div className='flex flex-wrap gap-3 md:justify-between items-center  mt-4'>
                   <a href='https://car-rental-platform.pages.dev/' className='text-black font-semibold flex items-center gap-1 cursor-pointer hover:underline'><FaExternalLinkAlt />View Project</a>
                   <a href='https://github.com/abapurbo/car-rental-platform-client' className='text-black font-semibold flex items-center gap-1 cursor-pointer hover:underline '><img className='w-4' src="https://i.ibb.co.com/5xwL5N66/images-8-removebg-preview.png" alt="github-img" />Git Client</a>
                   <a href='https://github.com/abapurbo/car-rental-server' className='text-black font-semibold flex items-center gap-1 cursor-pointer hover:underline '><img className='w-4' src="https://i.ibb.co.com/5xwL5N66/images-8-removebg-preview.png" alt="github-img" />Git Server</a>
@@ -91,27 +93,27 @@ export default function ProjectSwiper() {
                 <p className='text-xl text-black font-bold'><span className='text-[#9333EA]'>Skill</span>Swap</p>
                 <button className='bg-gray-200 px-2 py-1 shadow-2xl rounded-xs text-sm font-semibold'>Front-End</button>
               </div>
-                <div className='mt-3  space-y-3'>
-                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga corrupti consequatur optio ducimus facilis impedit possimus laboriosam iure, dicta modi.</p>
-                  <div className='flex flex-wrap gap-2'>
-                    <button className='flex items-center gap-1 text-black bg-gray-200 px-2 py-1 shadow-2xl rounded-xs text-sm font-semibold'>
-                      <img className='w-5' src="https://i.ibb.co.com/qYgz5RVj/images-10-removebg-preview-1.png" alt="React-img" />
-                      React
-                    </button>
-                    <button className='flex items-center gap-1 text-black bg-gray-200 px-2 py-1 shadow-2xl rounded-xs text-sm font-semibold'>
-                      <img className='w-5' src="https://i.ibb.co.com/Csh60SY0/CIAZz2-CYc6-Kc-removebg-preview.png" alt="tailwind-img" />
-                      Tailwind CSS
-                    </button>
-                    <button className='flex items-center gap-1 text-black bg-gray-200 px-2 py-1 shadow-2xl rounded-xs text-sm font-semibold'>
-                      <img className='w-5' src="https://i.ibb.co/ZqRTS5Z/images-3-removebg-preview.png" alt="firebase-img" />
-                      Firebase
-                    </button>
-                  </div>
+              <div className='mt-3  space-y-3'>
+                <p>SkillSwap is a responsive React SPA where users can exchange and discover local skills, explore detailed sessions, and book providers. It includes Firebase authentication (Email & Google), protected routes, profile updating, password reset, and dynamic JSON-based skill data.</p>
+                <div className='flex flex-wrap gap-2'>
+                  <button className='flex items-center gap-1 text-black bg-gray-200 px-2 py-1 shadow-2xl rounded-xs text-sm font-semibold'>
+                    <img className='w-5' src="https://i.ibb.co.com/qYgz5RVj/images-10-removebg-preview-1.png" alt="React-img" />
+                    React
+                  </button>
+                  <button className='flex items-center gap-1 text-black bg-gray-200 px-2 py-1 shadow-2xl rounded-xs text-sm font-semibold'>
+                    <img className='w-5' src="https://i.ibb.co.com/Csh60SY0/CIAZz2-CYc6-Kc-removebg-preview.png" alt="tailwind-img" />
+                    Tailwind CSS
+                  </button>
+                  <button className='flex items-center gap-1 text-black bg-gray-200 px-2 py-1 shadow-2xl rounded-xs text-sm font-semibold'>
+                    <img className='w-5' src="https://i.ibb.co/ZqRTS5Z/images-3-removebg-preview.png" alt="firebase-img" />
+                    Firebase
+                  </button>
                 </div>
-                <div className='flex justify-between items-center mt-4 '>
-                  <a href='https://b12-a9-firesheild-abapurbo.web.app/' className='text-black font-semibold flex items-center gap-1 cursor-pointer hover:underline '><FaExternalLinkAlt />View Project</a>
-                  <a href='https://github.com/abapurbo/b12-a9-firesheild-abapurbo' className='text-black font-semibold flex items-center gap-1 cursor-pointer hover:underline '><img className='w-4' src="https://i.ibb.co.com/5xwL5N66/images-8-removebg-preview.png" alt="github-img" />Git Client</a>
-                </div>
+              </div>
+              <div className='flex justify-between items-center mt-4 '>
+                <a href='https://b12-a9-firesheild-abapurbo.web.app/' className='text-black font-semibold flex items-center gap-1 cursor-pointer hover:underline '><FaExternalLinkAlt />View Project</a>
+                <a href='https://github.com/abapurbo/b12-a9-firesheild-abapurbo' className='text-black font-semibold flex items-center gap-1 cursor-pointer hover:underline '><img className='w-4' src="https://i.ibb.co.com/5xwL5N66/images-8-removebg-preview.png" alt="github-img" />Git Client</a>
+              </div>
             </div>
           </div>
         </SwiperSlide>

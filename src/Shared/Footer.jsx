@@ -60,9 +60,9 @@ const Footer = () => {
         <div>
           <h2 className="text-lg font-semibold text-purple-600 mb-4">Social</h2>
           <div className="flex gap-5 text-xl">
-            <a href="#" className="hover:text-blue-600 transition-colors"><FaFacebook /></a>
-            <a href="#" className="hover:text-blue-500 transition-colors"><FaLinkedin /></a>
-            <a href="#" className="hover:text-gray-800 transition-colors"><FaGithub /></a>
+            <a href="https://www.facebook.com/profile.php?id=61577638051677" className="hover:text-blue-600 transition-colors"><FaFacebook /></a>
+            <a href="https://www.linkedin.com/in/apurbo-sarker-02ab4a34b/" className="hover:text-blue-500 transition-colors"><FaLinkedin /></a>
+            <a href="https://github.com/abapurbo" className="hover:text-gray-800 transition-colors"><FaGithub /></a>
           </div>
         </div>
       </div>
